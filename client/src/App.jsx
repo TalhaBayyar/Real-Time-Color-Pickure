@@ -31,14 +31,16 @@ export default App
   Real Time çalışan uygulamalar, gerçek zamanlı olarak veri akışı ve kullanıcı etkileşimi ile çalışan uygulamalardır.
     Bu tür uygulamalar, kullanıcıların hızlı ve etkileşimli bir deneyim yaşamasını sağlayan dinamik bir yapıya sahiptir.
     
-  Bir diğer örnek ise, bir çevirim içi sohbet uygulaması gerçek zamanlı sohbet mesajlarını göndermek ve almak için kullanılabilir. 
-    Benzer şekilde, bir etkileşimli harita uygulaması, kullanıcının haritayı hızlı bir şekilde pan ve zoom yaparak incelemesine olanak tanır.
+  Bir diğer örnek ise, bir çevirim içi sohbet uygulaması, gerçek zamanlı sohbet mesajlarını göndermek ve almak için kullanılabilir. 
+    Benzer şekilde, bir etkileşimli harita uygulaması, kullanıcının haritayı hızlı bir şekilde pan ve zoom yaparak
+      incelemesine olanak tanır.
 
   Websockets -> Websockets, gerçek zamanlı iletişim kurmak için kullanılan bir ağ protokolüdür. Bu protokol, tarayıcı
     ile sunucu arasında tam dublex iletişim sağlar. Yani, hem tarayıcıdan sunucuya hem de sunucudan tarayıcıya
-    veri gönderebilir. 
+    veri gönderebilir. İstemci ve sunucu, anlık veri güncellemeleri, anlık mesajlaşma veya gerçek zamanlı uygulamalar 
+    gibi senaryolarda Websockets'i tercih edebilir.
     
-  Websockets, HTTP (Hyper Text Transfer Protocol) protokolünün üzerine inşa edilir ve bağlantı sağlamak için standart 
+  Websockets, HTTP (Hypertext Transfer Protocol) protokolünün üzerine inşa edilir ve bağlantı sağlamak için standart 
     HTTP bağlantı notları kullanılır. Ancak, Websockets bağlantıları, tek bir TCP (Transmission Control Protocol) 
     bağlantısı üzerinden gerçekleştirilir ve bu sayede gereksiz ağ trafiğini ve bağlantı kurma gecikmelerini azaltır. 
     

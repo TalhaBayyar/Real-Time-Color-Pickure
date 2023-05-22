@@ -1,9 +1,10 @@
 const app = require("express")();
-const http = require("http").createServer(app);
+const http = require("http").createServer(app)
 const io = require("socket.io")(http);
 const cors = require("cors");
 
 app.use(cors());
+
 
 app.get("/", (req, res) => {
     res.send("hello");
@@ -36,7 +37,7 @@ io.on("connection", (socket) => {
     
 })
 
-http.listen(3001, () => console.log("Server is up 🚀🚀"))
+http.listen(3000, () => console.log("Server is up 🚀🚀"))
 
 
 /*                                                                                              Bismillahirrahmanirrahim                    
@@ -79,7 +80,8 @@ http.listen(3001, () => console.log("Server is up 🚀🚀"))
          
        
        
-  2- Sonra, Cross-Origin Resource Sharing (CORS) politikasını etkinleştirmek için 'app.use(cors())' kodunu kullanıyoruz
+  2- Sonra, Cross-Origin Resource Sharing (Kaynaklar Arası Kaynak Paylaşımı) (CORS) politikasını etkinleştirmek için 
+      'app.use(cors())' kodunu kullanıyoruz
        Bu, farklı etki alanlarından gelen isteklere izin verir. 
        
   3- Bir GET isteği alındığında 'hello' yanıtını döndüren basit bir rotayı tanımlıyoruz. 
